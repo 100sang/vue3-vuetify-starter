@@ -1,7 +1,6 @@
 <template>
   <v-app :theme="this.$store.state? this.$store.state.theme : 'light'"> 
-      <Header />
-   
+     Demo Main
   </v-app>
 </template>
 
