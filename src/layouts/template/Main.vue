@@ -1,7 +1,5 @@
 <template>
-  <v-app> 
-     Demo Main : {{this.$store.state}}
-  </v-app>
+ <h5>Error Check! {{this.$store.state? this.$store.state.theme : 'none'}} </h5>
 </template>
 
 <script setup>
