@@ -18,7 +18,7 @@
              <v-tooltip
               activator="parent"
               location="bottom"
-            >{{ $filters.capitalize(theme)  }} Theme</v-tooltip>
+            >{{ $filters.capitalize(theme) }} Theme</v-tooltip>
           </v-btn>
 
           <v-divider
@@ -76,7 +76,7 @@ export default {
   },
   computed: {
     theme() {
-      return this.$store.state.theme? this.$store.state.theme: 'light'
+      return this.$store.state? this.$store.state.theme: 'light'
     }
   },
   methods : {

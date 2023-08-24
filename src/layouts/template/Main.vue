@@ -1,15 +1,7 @@
 <template>
-  <v-app :theme="this.$store.state.theme? this.$store.state.theme : 'light'"> 
+  <v-app :theme="this.$store.state? this.$store.state.theme : 'light'"> 
       <Header />
-      <Sidebar />
-      <v-main>        
-        <Toolbar />
-        <v-container fluid>     
-          <Gallery />
-          <List />     
-        </v-container>
-        <Footer />
-      </v-main>    
+   
   </v-app>
 </template>
 
