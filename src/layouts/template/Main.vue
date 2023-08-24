@@ -1,5 +1,5 @@
 <template>
-  <v-app :theme="this.$store.state.theme"> 
+  <v-app :theme="this.$store.state.theme? this.$store.state.theme : 'light'"> 
       <Header />
       <Sidebar />
       <v-main>        
@@ -11,7 +11,6 @@
         <Footer />
       </v-main>    
   </v-app>
-
 </template>
 
 <script setup>
