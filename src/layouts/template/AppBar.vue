@@ -1,17 +1,18 @@
 <template>
     <v-app-bar
       color="primary"
-      density="compact"
+      image="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg"
       :elevation="2"
     >
       <template v-slot:prepend>
         <v-app-bar-nav-icon></v-app-bar-nav-icon>
       </template>
 
-      <v-app-bar-title>{{this.$store.state.project}}</v-app-bar-title>
+      <v-app-bar-title @click="goMain()">{{this.$store.state.project}}</v-app-bar-title>
 
       <template v-slot:append>
-
+         
+          <!-- Dark Mode -->
           <v-btn dark icon @click="onClick">
             <v-icon :icon="theme === 'light' ? 'mdi-weather-sunny' : 'mdi-weather-night'" />
              <v-tooltip
@@ -25,15 +26,36 @@
               vertical
           ></v-divider>
 
-         <v-btn dark icon
-           v-for="item in icons"
-           :key="item.text">
-            <v-icon>{{item.icon}}</v-icon>
+          <!-- Setting -->
+           <v-menu>
+          <template v-slot:activator="{ props }">
+             <v-btn dark icon
+              v-bind="props"
+            >
+               <v-icon>mdi-cog</v-icon>
+            </v-btn>
+          </template>
+
+          <v-list>
+            <v-list-item
+              v-for="(item, index) in items"
+              :key="index"
+            >
+              <v-list-item-title>{{ item.title }}</v-list-item-title>
+            </v-list-item>
+          </v-list>
+        </v-menu>
+
+         <!-- Notification-->
+         <v-btn dark icon>
+          <v-badge content="2" color="error">
+            <v-icon>mdi-bell</v-icon>
             <v-tooltip
               activator="parent"
               location="bottom"
-            >{{item.text}}</v-tooltip>
-          </v-btn>    
+            >Notification</v-tooltip>
+          </v-badge>
+        </v-btn>
 
       </template>
     </v-app-bar>
@@ -44,10 +66,12 @@
 export default {
   data () {
       return {
-       icons : [
-        {text : 'Settings', icon : 'mdi-cog'},
-        {text : 'Notifications', icon : 'mdi-bell'}
-      ]
+       items: [
+        { title: 'Profile' },
+        { title: 'Alert' },
+        { title: 'Setting' },
+        { title: 'Logout' },
+      ],
      }
   },
   computed: {
@@ -58,7 +82,10 @@ export default {
   methods : {
     onClick () {
        this.$store.state.theme =  this.$store.state.theme === 'light' ? 'dark' : 'light'
-    }
+    },
+    goMain(){
+        this.$router.push('/');
+    },
   }
 }
 

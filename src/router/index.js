@@ -1,17 +1,14 @@
 // Composables
 import { createRouter, createWebHistory } from 'vue-router'
 
-const routes = [
+const routes = [  
   {
-    path: '/',
-    component: () => import('@/layouts/template/Main'),
-    children: [
-      {
-        path: '',
-        name: 'Home',
-        component: () => import('@/views/Home'),
-      },
-    ],
+    path: '/',  name: 'Main',
+    component: () => import('@/views/Home')
+  },
+  {
+    path: '/demo',   name: 'Demo',
+    component: () => import('@/views/Demo')
   },
 ]
 

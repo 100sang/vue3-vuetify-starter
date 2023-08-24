@@ -5,7 +5,8 @@
       <v-main>        
         <Toolbar />
         <v-container fluid>     
-          <Contents />           
+          <Gallery />
+          <List />     
         </v-container>
         <Footer />
       </v-main>    
@@ -19,4 +20,7 @@ import Sidebar from './SideBar.vue'
 import Toolbar from './Tools.vue'
 import Contents from './Content.vue'
 import Footer from './Footer.vue'
+
+import Gallery from '@/components/Gallery.vue'
+import List from '@/components/List.vue'
 </script>

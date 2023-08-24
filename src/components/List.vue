@@ -1,11 +1,16 @@
 <template>
    <v-card flat class="mt-5">
         <v-list lines="two">
-        <v-list-subheader>List Items</v-list-subheader>
+        <v-list-subheader>Messages</v-list-subheader>
         <template v-for="n in 5" :key="n">
             <v-list-item>
             <template v-slot:prepend>
-                <v-avatar color="grey-darken-1"></v-avatar>
+                <v-avatar>
+                <v-img
+                    :src="`https://randomuser.me/api/portraits/women/1${n}.jpg`"
+                    :alt="`women1${n}`"
+                ></v-img>
+                </v-avatar>
             </template>
 
             <v-list-item-title>Message {{ n }}</v-list-item-title>

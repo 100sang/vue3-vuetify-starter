@@ -1,4 +1,4 @@
-# Vue3 + Vuetify 3.1.0
+# Vuetify Start Template
 
 <p align="center">
     <img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Vue.png" alt="logo" width="185" height="185" />
@@ -14,7 +14,30 @@ In addition, common layouts, themes, global filters, and components are also inc
 
 <br />
 
-### Project Setup
+Based on the basic structure of Vue 3, Vue router, store, vuex and Vuetify plugins were integrated and applied.
+
+Features
+---
+- Based on the basic structure of Vue3, router, store, vuex and vuetify were integrated and applied.
+- Vuetify features and components are stored as layout directories and templates for easy reuse.
+- A demo site that allows you to quickly create menus, galleries, and functions with the Vuetify framework by referring to [Wirefreams](https://vuetifyjs.com/en/getting-started/wireframes/).
+
+<br />
+
+Demo
+---
+A live demo of Vue3 + Vuetify Demo is available at vue3-vuetify-starter-100sang.netlify.app
+
+<br />
+
+Getting Started
+---
+Clone the repository and runnig on your m achine, follow the steps below.
+
+### Prerequisites
+- Vue and npm installed on your machine
+
+### Setup
 ```
 npm install
 ```
@@ -27,11 +50,6 @@ npm run serve
 ### Compiles and minifies for production
 ```
 npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
 ```
 
 ### Customize configuration

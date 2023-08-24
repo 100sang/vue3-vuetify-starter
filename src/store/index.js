@@ -1,8 +1,9 @@
 import { createStore } from "vuex";
 
-export default createStore({
+const store = createStore({
   state: {
-    project : 'My Project',
+    project : 'Vuetify Project',
+    username : "100SANG",
     email: '100sang.net@gmail.com',
     theme: 'light'
   },
@@ -13,4 +14,6 @@ export default createStore({
   actions: {
   },
 });
+
+export default store
  

@@ -1,7 +1,7 @@
 <template>
     <v-toolbar class="px-5" color="transparent"> 
         
-          <span class="text-h6">Page Title</span>
+          <span class="text-h6">{{ $route.name}}</span>
  
           <v-spacer></v-spacer>
 
@@ -26,7 +26,7 @@
 
 <script>
 export default {
-
+ 
 }
 </script>
 

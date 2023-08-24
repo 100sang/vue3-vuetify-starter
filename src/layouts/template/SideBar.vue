@@ -7,7 +7,7 @@
         @click="rail = false"
       >
         <v-list-item
-          title="My Name"
+          :title="username"
           :subtitle="email"
           nav
         >
@@ -30,8 +30,9 @@
       <v-divider></v-divider>
 
 
-      <v-list density="compact" nav>
 
+     <!-- Main Menu -->
+      <v-list density="compact" nav>
         <v-list-item
           v-for="item in menus"
           :key="item.title"
@@ -43,31 +44,13 @@
           </template>
         </v-list-item>
 
-        <v-list-item
-          v-for="n in 3"
-          :key="`menu`+n"
-          :value="n+3"
-        >
-          <template v-slot:prepend>
-            <v-icon icon="mdi-circle"></v-icon>
-          </template>
-
-          <v-list-item-title>menu {{n}}</v-list-item-title>
-        </v-list-item>
-
       </v-list>
     </v-navigation-drawer>
 
 
+    <!-- Sub Menu -->
     <v-navigation-drawer permanent>
-       <v-sheet
-        color="sheet"
-        height="128"
-        width="100%"
-      ></v-sheet>
-
-      <v-list :items="submenus"></v-list>
-
+      <v-list :items="submenus"> </v-list>
     </v-navigation-drawer>
 
 
@@ -80,21 +63,26 @@ export default {
       return {
         drawer: true,
         email : this.$store.state.email,
+        username : this.$store.state.username,
         menus: [
           { title: 'My Files', value: 1, prependIcon: 'mdi-folder'},
           { title: 'Shared with me', value: 2, prependIcon: 'mdi-account-multiple'},
           { title: 'Starred', value: 3, prependIcon: 'mdi-star'},
+          { title: 'Gallery', value: 4, prependIcon: 'mdi-image-multiple'},
+          { title: 'Trash', value: 5, prependIcon: 'mdi-trash-can-outline'},
+          { title: 'Usage', value: 6, prependIcon: 'mdi-cloud-outline'},
         ],
         submenus: [
-            { type: 'subheader', title: 'Menu Group1' },
-            { title: 'Item #1', value: 1, },
-            { title: 'Item #2', value: 2, },
-            { title: 'Item #3', value: 3, },
+            { type: 'subheader', title: 'Folders' },
+            { title: 'Phohtos', value: 1, },
+            { title: 'Recipes', value: 2, },
+            { title: 'Vacation', value: 3, },
             { type: 'divider' },
-            { type: 'subheader', title: 'Menu Group2' },
-            { title: 'Item #4', value: 4, },
-            { title: 'Item #5', value: 5, },
-            { title: 'Item #6', value: 6, },
+            { type: 'subheader', title: 'Files' },
+            { title: 'Work', value: 4, },
+            { title: 'Project', value: 5, },
+            { title: 'Travel', value: 6, },
+            { title: 'Study', value: 7, },
             { type: 'divider' },
         ],
         rail: true,
