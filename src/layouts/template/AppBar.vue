@@ -76,7 +76,7 @@ export default {
   },
   computed: {
     theme() {
-      return this.$store.state.theme
+      return this.$store.state.theme? this.$store.state.theme: 'light'
     }
   },
   methods : {
@@ -84,7 +84,7 @@ export default {
        this.$store.state.theme =  this.$store.state.theme === 'light' ? 'dark' : 'light'
     },
     goMain(){
-        this.$router.push('/');
+       this.$router.push('/');
     },
   }
 }
