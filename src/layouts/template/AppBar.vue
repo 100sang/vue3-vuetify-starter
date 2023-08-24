@@ -8,7 +8,7 @@
         <v-app-bar-nav-icon></v-app-bar-nav-icon>
       </template>
 
-      <v-app-bar-title @click="goMain()">{{this.$store.state.project}}</v-app-bar-title>
+      <v-app-bar-title @click="goMain()">{{this.$store.state.project}} <span class="text-subtitle-2 ml-1">{{this.$store.state.desc}}</span></v-app-bar-title>
 
       <template v-slot:append>
          
