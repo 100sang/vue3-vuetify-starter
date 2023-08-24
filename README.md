@@ -16,6 +16,10 @@ In addition, common layouts, themes, global filters, and components are also inc
 
 Based on the basic structure of Vue 3, Vue router, store, vuex and Vuetify plugins were integrated and applied.
 
+
+<br />
+
+
 Features
 ---
 - Based on the basic structure of Vue3, router, store, vuex and vuetify were integrated and applied.
@@ -26,7 +30,7 @@ Features
 
 Demo
 ---
-A live demo of Vue3 + Vuetify Demo is available at vue3-vuetify-starter-100sang.netlify.app
+A live demo of Vue3 + Vuetify Demo is available at [vue3-vuetify-starter-100sang.netlify.app](https://vue3-vuetify-starter-100sang.netlify.app)
 
 <br />
 
