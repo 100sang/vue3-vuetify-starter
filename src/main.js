@@ -15,7 +15,8 @@ app.use(vuetify);
 app.use(router);
 app.use(store);
 
-// app.config.globalProperties.$store = store;
+// Global Var 
+app.config.globalProperties.$store = store;
 app.config.globalProperties.$filters = filter;
 
 app.mount('#app');
