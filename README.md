@@ -30,7 +30,7 @@ Features
 
 Demo
 ---
-A live demo of Vue3 + Vuetify Demo is available at [vue3-vuetify-starter-100sang.netlify.app](https://vue3-vuetify-starter-100sang.netlify.app)
+A live demo of Vue3 + Vuetify Demo is available at <a href="https://vue3-vuetify-starter-100sang.netlify.app" target=_blank>vue3-vuetify-starter-100sang.netlify.app</a>
 
 <br />
 
