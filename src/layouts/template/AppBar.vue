@@ -76,7 +76,7 @@ export default {
   },
   computed: {
     theme() {
-      return this.$store.state? this.$store.state.theme: 'light'
+      return this.$store.state.theme
     }
   },
   methods : {
