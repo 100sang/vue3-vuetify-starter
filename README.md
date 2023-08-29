@@ -24,7 +24,7 @@ Features
 ---
 - Based on the basic structure of Vue3, router, store, vuex and vuetify were integrated and applied.
 - Vuetify features and components are stored as layout directories and templates for easy reuse.
-- A demo site that allows you to quickly create menus, galleries, and functions with the Vuetify framework by referring to [Wirefreams](https://vuetifyjs.com/en/getting-started/wireframes/).
+- A demo site that allows you to quickly create menus, galleries, and functions with the Vuetify framework by referring to [Wirefreams](https://vuetifyjs.com/en/getting-started/wireframes/){: target="_blank"}.
 
 <br />
 
@@ -36,7 +36,7 @@ A live demo of Vue3 + Vuetify Demo is available at <a href="https://vue3-vuetify
 
 Getting Started
 ---
-Clone the repository and runnig on your m achine, follow the steps below.
+Clone the repository and runnig on your machine, follow the steps below.
 
 ### Prerequisites
 - Vue and npm installed on your machine
