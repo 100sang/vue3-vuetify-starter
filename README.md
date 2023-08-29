@@ -24,13 +24,13 @@ Features
 ---
 - Based on the basic structure of Vue3, router, store, vuex and vuetify were integrated and applied.
 - Vuetify features and components are stored as layout directories and templates for easy reuse.
-- A demo site that allows you to quickly create menus, galleries, and functions with the Vuetify framework by referring to [Wirefreams](https://vuetifyjs.com/en/getting-started/wireframes/){: target="_blank"}.
+- A demo site that allows you to quickly create menus, galleries, and functions with the Vuetify framework by referring to [Wirefreams](https://vuetifyjs.com/en/getting-started/wireframes/)
 
 <br />
 
 Demo
 ---
-A live demo of Vue3 + Vuetify Demo is available at <a href="https://vue3-vuetify-starter-100sang.netlify.app" target=_blank>vue3-vuetify-starter-100sang.netlify.app</a>
+A live demo of Vue3 + Vuetify Demo is available at [vue3-vuetify-starter-100sang.netlify.app](https://vue3-vuetify-starter-100sang.netlify.app)
 
 <br />
 
